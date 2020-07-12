@@ -19,4 +19,7 @@ INSERT INTO currency_exchange
     (id, currency_code, currency_name, currency_symbol, rate, "date")
     VALUES (2, "EUR", "EURO", "€", 1.0, '2020-07-12 14:06:07.777');
 
+
+
+
 SELECT * FROM currency_exchange;
