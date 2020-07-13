@@ -14,11 +14,12 @@ public class CurrencyExchange {
         System.out.println("How much money do you want to convert?");
         int money_in = scanner.nextInt();
 
+        if (money_in < 0) {
+            System.out.println("Error, wrong value");
+        }
+
         System.out.println("What currency do you want to convert to?");
         String output_currency = scanner.nextLine();
-
-
-
 
 
 
