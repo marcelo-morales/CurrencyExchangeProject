@@ -8,25 +8,33 @@ public class CurrencyExchange {
 
         Scanner scanner = new Scanner(System.in);
 
+        try {
+            System.out.println("Hello, what is your input currency?");
+            String input_currency = scanner.nextLine();
+            System.out.println("How much money do you want to convert?");
+            int money_in = scanner.nextInt();
 
-        System.out.println("Hello, what is your input currency?");
-        String input_currency = scanner.nextLine();
-        System.out.println("How much money do you want to convert?");
-        int money_in = scanner.nextInt();
-
-        if (money_in < 0) {
-            System.out.println("Error, wrong value");
+            if (money_in < 0) {
+                throw new IllegalArgumentException("Cannot convert a negative amount of currency");
+            }
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
 
         System.out.println("What currency do you want to convert to?");
         String output_currency = scanner.nextLine();
 
+        /*
+        Connecting to the currency-exchange database
+        Where fo I find the JDBC URL?
 
-
+         */
         String url = "";
         String user = ;
         String password = ;
         Connection myConn = DriverManager.getConnection(url, user, password);
+
 
 
 
