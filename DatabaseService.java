@@ -1,4 +1,4 @@
-package org.codelab.currencyCalculator.services;
+//package org.codelab.currencyCalculator.services;
 
 import java.math.BigDecimal;
 
@@ -11,12 +11,20 @@ import org.codelab.currencyCalculator.services.data.CurrencyDAO;
  */
 
 public class DatabaseService {
-    private final CurrencyDAO currencyDAO;
+    private CurrencyDAO currencyDAO;
 
-    public DatabaseService(CurrencyDAO currencyDAO) {
+
+    public void setCurrencyDAO(CurrencyDAO currencyDAO) {
         this.currencyDAO = currencyDAO;
     }
 
+
+    /*
+    //sets the current
+    public DatabaseService(CurrencyDAO currencyDAO) {
+        this.currencyDAO = currencyDAO;
+    }
+    */
     public BigDecimal convertFromTo(String currencyTo) {
         //its doing Too much.
         return currencyDAO.getCurrency(currencyTo);

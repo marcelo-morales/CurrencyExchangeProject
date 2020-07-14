@@ -2,6 +2,19 @@ import java.sql.DriverManager;
 import java.util.Currency;
 import java.util.Scanner;
 
+/*
+
+this is the driver program
+ */
+
+//Spark will be used for the we application
+import static spark.Spark.*;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        get("/hello", (req, res) -> "Hello World");
+    }
+}
 
 public class CurrencyExchange {
     public static void main (String [] args) {
@@ -29,12 +42,12 @@ public class CurrencyExchange {
         Connecting to the currency-exchange database
         Where fo I find the JDBC URL?
 
-         */
+
         String url = "";
         String user = ;
         String password = ;
         Connection myConn = DriverManager.getConnection(url, user, password);
-
+*/
 
 
 

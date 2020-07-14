@@ -10,6 +10,10 @@ CREATE TABLE currency_exchange(
 /*
 I think Chris we should use about 10 currencies, now just inserting initial
  data, going from one currency to same currency
+
+ update: Chris told us which currencies to use, so mmay need to revise
+ also: the rate is the conversion to US dollar, rate is from input currency
+ to US dollar
  */
 INSERT INTO currency_exchange
     (id, currency_code, currency_name, currency_symbol,  rate, "date")
