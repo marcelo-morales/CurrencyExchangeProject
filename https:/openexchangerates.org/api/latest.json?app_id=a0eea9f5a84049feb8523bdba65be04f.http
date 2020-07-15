@@ -1,6 +1,12 @@
+//conneting to the database
+
+//get request to
 GET https://openexchangerates.org/api/latest.json?app_id=a0eea9f5a84049feb8523bdba65be04f
 
 console.log("1 US Dollar equals " + data.rates.GBP + " British Pounds");
+
+GET https://openexchangerates.org/api/currencies.json ?show_alternative=1
+
 
 Accept: application/json
 

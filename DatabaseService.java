@@ -21,7 +21,7 @@ class App {
     //you can construct the PostgreSQL JDBC connection string by using the following format:
     //jdbc:postgresql://<database_host>:<port>/<database_name>
     //this is specfic to each user
-    private final String url = "jdbc:postgresql://MacBook-Pro.local/currency_exchange";
+    private final String url = "jdbc:postgresql://localhost/currency_exchange";
     private final String user = "marcelomorales";
     private final String password = "leonardo11";
 
@@ -29,6 +29,10 @@ class App {
      * Connect to the PostgreSQL database
      *
      * @return a Connection object
+     *
+     * To connect to a database you need a Connection object. The Connection object
+     * uses a DriverManager. The DriverManager passes in your database username,
+     * your password, and the location of the database.
      */
     public Connection connect() {
         Connection conn = null;
