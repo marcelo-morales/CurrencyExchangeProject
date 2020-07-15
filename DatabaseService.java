@@ -20,6 +20,7 @@ import java.sql.SQLException;
 class App {
     //you can construct the PostgreSQL JDBC connection string by using the following format:
     //jdbc:postgresql://<database_host>:<port>/<database_name>
+    //this is specfic to each user
     private final String url = "jdbc:postgresql://MacBook-Pro.local/currency_exchange";
     private final String user = "marcelomorales";
     private final String password = "leonardo11";
