@@ -15,7 +15,7 @@ of its digits is equal to the number itself
 An n-digit number that is the sum of the nth powers of its digits is called an n-Armstrong(narcissistic) number
 */
 
-public class Main {
+public class armstrong {
 
     public static void main(String[] args) {
 
