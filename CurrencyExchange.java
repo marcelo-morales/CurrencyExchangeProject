@@ -7,7 +7,7 @@ import java.util.Scanner;
 this is the driver program
  */
 
-//Spark will be used for the we application
+//Spark will be used for the web application
 import static spark.Spark.*;
 
 public class HelloWorld {
@@ -15,6 +15,7 @@ public class HelloWorld {
         get("/hello", (req, res) -> "Hello World");
     }
 }
+
 
 public class CurrencyExchange {
     public static void main (String [] args) {
@@ -40,7 +41,7 @@ public class CurrencyExchange {
 
         /*
         Connecting to the currency-exchange database
-        Where fo I find the JDBC URL?
+        Where do I find the JDBC URL?
 
 
         String url = "";

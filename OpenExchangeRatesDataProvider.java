@@ -22,6 +22,7 @@ public class OpenExchangeRatesDataProvider implements DataProvider {
 
     public BigDecimal getCurrency(String inputCurrency, String outputCurrency) {
 
+        return null;
     }
 
 
